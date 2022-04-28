@@ -1,65 +1,91 @@
-# mobile README
+# Code Generator extension for Flutter Architecture
 
-This is the README for your extension "mobile". After writing up a brief description, we recommend including the following sections.
+This is the README for the Code Generator extension. This extension generates the files needed for the Flutter Architecture. 
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Generate View Layer
 
-For example if there is an image subfolder under your extension project workspace:
+#### Generates all the View Layer files for the view layer.
 
-\!\[feature X\]\(images/feature-x.png\)
+    feature_name
+     |
+     |-> model
+        |
+        |-> feature_name_model.dart
+     |
+     |-> service
+        |
+        |-> i_feature_name_service.dart
+        |
+        |-> feature_name_service.dart
+     |
+     |-> view
+        |
+        |-> feature_name_view.dart
+     |
+     |-> view_model
+        |
+        |-> feature_name_view_model.dart
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
+### Generate View Layer Service and Model
+
+#### Generates the View Layer files for Model and Service.
+
+    feature_name
+     |
+     |-> view
+        |
+        |-> feature_name_view.dart
+     |
+     |-> view_model
+        |
+        |-> feature_name_view_model.dart
+
+
+### Generate View Layer Service and Model
+
+#### Generates the View Layer files for Model and Service.
+
+    feature_name
+     |
+     |-> view
+        |
+        |-> feature_name_view.dart
+     |
+     |-> view_model
+        |
+        |-> feature_name_view_model.dart
+
+### Generate View Layer Only Model
+
+#### Generates the View Layer files for only Model.
+
+    feature_name
+     |
+     |-> model
+        |
+        |-> feature_name_model.dart
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
+You have to use the flutter architecture we use in order to these file generetor makes sense for the flutter code that you are writing
 ## Release Notes
 
 Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
+Initial release of Code Generator extension for Flutter Architecture. This version only includes the file generators for the view layer of our flutter architecture
 
 ### 1.1.0
 
-Added features X, Y, and Z.
+Next: we will add the Json to Dart converter for the model generation related to this Flutter Architecture
+
+### 2.0.0
+
+Next: we will add the Boilerplate generator for the Flutter Architecture
 
 -----------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
