@@ -10,7 +10,10 @@
 		"Other"
 	],
 	"activationEvents": [
-		"*"
+		"mobile.generateViewLayer",
+		"mobile.generateViewLayerOnlyService",
+		"mobile.generateViewLayerOnlyView",
+		"mobile.generateViewLayerOnlyModel"
 	],
 	"main": "./extension.js",
 	"contributes": {
