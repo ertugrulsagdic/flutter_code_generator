@@ -1,8 +1,9 @@
 {
 	"name": "mobile",
-	"displayName": "mobile",
+	"displayName": "Flutter Architecture Code Generator",
 	"description": "Code generators for Flutter Architecture",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"publisher": "ertugrulsa",
 	"engines": {
 		"vscode": "^1.66.0"
 	},
@@ -10,10 +11,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"mobile.generateViewLayer",
-		"mobile.generateViewLayerOnlyService",
-		"mobile.generateViewLayerOnlyView",
-		"mobile.generateViewLayerOnlyModel"
+		"*"
 	],
 	"main": "./extension.js",
 	"contributes": {
