@@ -2,6 +2,10 @@
 
 This is the README for the Code Generator extension. This extension generates the files needed for the Flutter Architecture. 
 
+Open command palette in VS Code then search for the Features below.
+
+Then the code will generate the files with boiler plate codes inside.
+
 ## Features
 
 ### Generate View Layer
@@ -78,7 +82,7 @@ Users appreciate release notes as you update your extension.
 
 Initial release of Code Generator extension for Flutter Architecture. This version only includes the file generators for the view layer of our flutter architecture
 
-### 1.0.2
+### 1.0.3
 
 Windows generation fix
 

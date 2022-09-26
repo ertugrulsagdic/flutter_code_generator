@@ -2,7 +2,7 @@
 	"name": "mobile",
 	"displayName": "Flutter Architecture Code Generator",
 	"description": "Code generators for Flutter Architecture",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"publisher": "ertugrulsa",
 	"engines": {
 		"vscode": "^1.66.0"
