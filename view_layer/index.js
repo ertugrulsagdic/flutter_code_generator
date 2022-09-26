@@ -68,9 +68,7 @@ const generateViewLayerOnlyService = async (featureName) => {
 
   try {
 
-    const folderPath = vscode.workspace.workspaceFolders[0].uri
-      .toString()
-      .split(':')[1];
+    const folderPath = vscode.workspace.workspaceFolders[0].uri.fsPath;
 
     const viewLayerPath = path.join(folderPath, `lib/view/${featureName}/`);
 
@@ -106,9 +104,7 @@ const generateViewLayerOnlyView = async (featureName) => {
 
   try {
 
-    const folderPath = vscode.workspace.workspaceFolders[0].uri
-      .toString()
-      .split(':')[1];
+    const folderPath = vscode.workspace.workspaceFolders[0].uri.fsPath;
 
     const viewLayerPath = path.join(folderPath, `lib/view/${featureName}/`);
 
@@ -143,9 +139,7 @@ const generateViewLayerOnlyModel = async (featureName) => {
 
   try {
 
-    const folderPath = vscode.workspace.workspaceFolders[0].uri
-      .toString()
-      .split(':')[1];
+    const folderPath = vscode.workspace.workspaceFolders[0].uri.fsPath;
 
     const viewLayerPath = path.join(folderPath, `lib/view/${featureName}/`);
 
