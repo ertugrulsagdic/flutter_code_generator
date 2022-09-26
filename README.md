@@ -82,7 +82,7 @@ Users appreciate release notes as you update your extension.
 
 Initial release of Code Generator extension for Flutter Architecture. This version only includes the file generators for the view layer of our flutter architecture
 
-### 1.0.3
+### 1.0.4
 
 Windows generation fix
 
