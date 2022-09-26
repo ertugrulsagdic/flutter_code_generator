@@ -78,6 +78,10 @@ Users appreciate release notes as you update your extension.
 
 Initial release of Code Generator extension for Flutter Architecture. This version only includes the file generators for the view layer of our flutter architecture
 
+### 1.0.2
+
+Windows generation fix
+
 ### 1.1.0
 
 Next: we will add the Json to Dart converter for the model generation related to this Flutter Architecture

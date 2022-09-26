@@ -18,9 +18,11 @@ const generateViewLayer = async (featureName) => {
       .toString()
       .split(':')[1];
 
-    const viewLayerPath = path.join(folderPath, `lib${path.sep}view${path.sep}${featureName}${path.sep}`);
+    const viewLayerPath = path.join(folderPath, `lib/view/${featureName}/`);
 
-    const modelPath = path.join(viewLayerPath, `model${path.sep}`);
+    console.log(path);
+
+    const modelPath = path.join(viewLayerPath, `model/`);
 
     if (!fs.existsSync(modelPath)) {
       fs.mkdirSync(modelPath, { recursive: true });
@@ -28,7 +30,7 @@ const generateViewLayer = async (featureName) => {
 
     fs.writeFileSync(`${modelPath}${featureName}_model.dart`, modelContent(featureName));
 
-    const servicePath = path.join(viewLayerPath, `service${path.sep}`);
+    const servicePath = path.join(viewLayerPath, `service/`);
 
     if (!fs.existsSync(servicePath)) {
       fs.mkdirSync(servicePath, { recursive: true });
@@ -37,7 +39,7 @@ const generateViewLayer = async (featureName) => {
     fs.writeFileSync(`${servicePath}${featureName}_service.dart`, serviceContent(featureName));
     fs.writeFileSync(`${servicePath}i_${featureName}_service.dart`, iServiceContent(featureName));
 
-    const viewPath = path.join(viewLayerPath, `view${path.sep}`);
+    const viewPath = path.join(viewLayerPath, `view/`);
     
     if (!fs.existsSync(viewPath)) {
       fs.mkdirSync(viewPath, { recursive: true });
@@ -45,7 +47,7 @@ const generateViewLayer = async (featureName) => {
     
     fs.writeFileSync(`${viewPath}${featureName}_view.dart`, viewContent(featureName));
 
-    const viewModelPath = path.join(viewLayerPath, `viewmodel${path.sep}`);
+    const viewModelPath = path.join(viewLayerPath, `viewmodel/`);
 
     if (!fs.existsSync(viewModelPath)) {
       fs.mkdirSync(viewModelPath, { recursive: true });
@@ -72,9 +74,9 @@ const generateViewLayerOnlyService = async (featureName) => {
       .toString()
       .split(':')[1];
 
-    const viewLayerPath = path.join(folderPath, `lib${path.sep}view${path.sep}${featureName}${path.sep}`);
+    const viewLayerPath = path.join(folderPath, `lib/view/${featureName}/`);
 
-    const modelPath = path.join(viewLayerPath, `model${path.sep}`);
+    const modelPath = path.join(viewLayerPath, `model/`);
 
     if (!fs.existsSync(modelPath)) {
       fs.mkdirSync(modelPath, { recursive: true });
@@ -82,7 +84,7 @@ const generateViewLayerOnlyService = async (featureName) => {
 
     fs.writeFileSync(`${modelPath}${featureName}_model.dart`, modelContent(featureName));
 
-    const servicePath = path.join(viewLayerPath, `service${path.sep}`);
+    const servicePath = path.join(viewLayerPath, `service/`);
 
     if (!fs.existsSync(servicePath)) {
       fs.mkdirSync(servicePath, { recursive: true });
@@ -110,9 +112,9 @@ const generateViewLayerOnlyView = async (featureName) => {
       .toString()
       .split(':')[1];
 
-    const viewLayerPath = path.join(folderPath, `lib${path.sep}view${path.sep}${featureName}${path.sep}`);
+    const viewLayerPath = path.join(folderPath, `lib/view/${featureName}/`);
 
-    const viewPath = path.join(viewLayerPath, `view${path.sep}`);
+    const viewPath = path.join(viewLayerPath, `view/`);
     
     if (!fs.existsSync(viewPath)) {
       fs.mkdirSync(viewPath, { recursive: true });
@@ -120,7 +122,7 @@ const generateViewLayerOnlyView = async (featureName) => {
     
     fs.writeFileSync(`${viewPath}${featureName}_view.dart`, viewContent(featureName));
 
-    const viewModelPath = path.join(viewLayerPath, `viewmodel${path.sep}`);
+    const viewModelPath = path.join(viewLayerPath, `viewmodel/`);
 
     if (!fs.existsSync(viewModelPath)) {
       fs.mkdirSync(viewModelPath, { recursive: true });
@@ -147,9 +149,9 @@ const generateViewLayerOnlyModel = async (featureName) => {
       .toString()
       .split(':')[1];
 
-    const viewLayerPath = path.join(folderPath, `lib${path.sep}view${path.sep}${featureName}${path.sep}`);
+    const viewLayerPath = path.join(folderPath, `lib/view/${featureName}/`);
 
-    const modelPath = path.join(viewLayerPath, `model${path.sep}`);
+    const modelPath = path.join(viewLayerPath, `model/`);
 
     if (!fs.existsSync(modelPath)) {
       fs.mkdirSync(modelPath, { recursive: true });
